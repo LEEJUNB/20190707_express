@@ -41,8 +41,7 @@ app.get('/dynamic', function(req,res){
 
 app.set('view engine','pug');
 app.set('views','./view');
-app.get('/template', function(req,res){
-    res.render('new');
+app.get('/template',function(req,res) {
+    res.render('new', {Senior:'Senior Adult', hobby:'취미',time:Date()});
 });
 
-//app.locals.pretty = true;
