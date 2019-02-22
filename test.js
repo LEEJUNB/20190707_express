@@ -44,3 +44,5 @@ app.set('views','./view');
 app.get('/template', function(req,res){
     res.render('new');
 });
+
+//app.locals.pretty = true;
