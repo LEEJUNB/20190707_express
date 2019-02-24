@@ -42,13 +42,11 @@ app.get('/repeatgrave', function(req,res) {
 
 // pug설정
 app.set('view engine','pug');
+// pug폴더로 view지정
 app.set('views','view');
-// js에 pug끌어쓰기
-app.locals.pretty  = true;
-// pug변수쓰기
-
-app.get('/pug', function(req,res) {
-    res.render('pugweb1', {_title:'good',_li:'list',_div:'divname'});
+// js에 pug끌어쓰기 // pug변수쓰기
+app.get('/pug',function(req,res){
+    res.render('new', {Senior:'RestartTown',hobby:'date',time : Date()});
 });
-
 // pug pretty만들기
+app.locals.pretty  = true;
