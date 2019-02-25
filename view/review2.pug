@@ -1,0 +1,18 @@
+html(lang='ko')
+    head
+        
+    body
+        #header
+            h1.title Header
+        #main
+            div Main
+            ul
+                - var items = [1, 2, 3, 4, 5]
+                each item in items
+                    li= item
+            pre
+                | This is
+                | multiline
+        | good
+        #footer
+            p Footer
