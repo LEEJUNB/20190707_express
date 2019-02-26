@@ -29,12 +29,6 @@ app.get('/repeat',function(req,res){
     res.send(output);
 })
 
-//semantic web
-//이를위해 /:*
-//이를위해 .params.*
-app.get('/topic/:name', function(req,res){
-    res.send(req.params.name);
-});
 
 // use to pug
 app.set('view engine','pug');
@@ -42,4 +36,42 @@ app.set('views','view');
 app.locals.pretty = 'true';
 app.get('/pug',function(req,res){
     res.render('review2');
+});
+
+//QueryString
+app.get('/query',function(req,res){
+    res.send(req.query.name);
+});
+
+//semantic web
+//이를위해 /:*
+//이를위해 .params.*
+app.get('/topic/:name/:add', function(req,res){
+    res.send(req.params.name+' '+req.params.add);
+});
+
+//semantic web + array
+app.get('/topics/:id',function(req,res){
+    var arr = [
+        '20181227',
+        'continue?',
+        'when I ending this project'
+    ];
+    res.send(arr[req.params.id]);
+})
+
+app.get('/topicss/:id/:next',function(req,res){
+    var topics = [
+        'test',
+        'when',
+        'how'
+    ];
+
+    var output = `
+    <a href="/topicss?id=0> JS 0 </a>
+    <a href="/topicss?id=1> JS 1 </a>
+    <a href="/topicss?id=2> JS 2 </a>
+    ${topics[req.params.id]}
+    `
+    res.send(output);
 });
