@@ -1,0 +1,13 @@
+html
+    head
+        meta(charset='utf-8')
+        //스타일 글폰트 및 색상 지정하는법
+    body
+        h1= _write_section
+        form(action='/form_receiver', method='post')
+            p   
+                input(type='text', name='text_pug')
+            p
+                textarea(name='description_pug')
+            p
+                input(type='submit')
