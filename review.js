@@ -126,3 +126,6 @@ app.post('/form_receiver', function(req,res){
 // 그러나 이를 위해선 body-parser라는 미들웨어를 설치해야한다.
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencodeed({extended : false}))
+
+// upload file save
+// continue => app_files.js
