@@ -1,7 +1,6 @@
 // express
 // pug
 // use variable 
-
 const express = require('express');
 const app = express();
 
