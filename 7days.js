@@ -52,3 +52,37 @@ app.get('/repeatHtml', function(req,res){
     res.send(output);
 })
 
+app.set('view engine','pug');
+app.set('views','view');
+
+app.get('/pug',function(req,res){
+    res.render('new', {Senior:'Town', hobby:'golf',time:Date()});
+});
+
+app.locals.pretty = true;
+
+//QueryString
+app.get('/query',function(req,res){
+    res.send(req.query.name);
+});
+
+//Semantic
+app.get('/query/:name/:add',function(req,res){
+    res.send(req.params.name + ' ' + req.params.add)
+});
+
+app.get('/topic/:id/:next', function(res,req) {
+    var topics = [
+        'good',
+        'gread',
+        'awesome'
+    ];
+
+    var output = `
+    <a href="/topic?id=0> goooood </a>
+    <a href="/topic?id=1> grreeeeadt </a>
+    <a href="/topic?id=2> awesoooome </a>
+    ${topics[req.params.id]}
+    `
+    res.send(ouput);
+});
