@@ -46,9 +46,9 @@ app.get('/query',function(req,res){
 //semantic web
 //이를위해 /:*
 //이를위해 .params.*
-app.get('/topic/:name/:add', function(req,res){
-    res.send(req.params.name+' '+req.params.add);
-});
+app.get('/semantic/:id', function(req,res){
+    res.send(req.params.id)
+})
 
 //semantic web + array
 app.get('/topics/:id',function(req,res){
@@ -75,3 +75,4 @@ app.get('/topicss/:id/:next',function(req,res){
     `
     res.send(output);
 });
+
