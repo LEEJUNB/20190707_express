@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+html {
+    /* background 이미지 설정 */
+    background-image: url("../img/cat.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+     /* 이미지 크기 설정(꽉 차게) 너비, 높이 입력. 100%=> 사이즈변경시에도 비율유지 */
+    background-size: 100% 100%;   
+}
+
+div p {
+    color : red;
+}
+
+table {
+    color : red;
+    font-family: 'Oswald';
+}
+#id {
+    color : blue;
+}
+
+#font {
+    font-family: 'Times New Roman', Times, serif;
+    font-style : bold;
+}
+
+#nav {
+    font-family: 'Oswald';
+    padding: 5px solid red;
+    padding-left : 20px;
+    border:10px solid blue;
+    margin: 15px solid yellow;
+    
+    /* width : 10px; */
+    /* height : 10px; */
+}
+.class {
+    color : yellow;
+}
