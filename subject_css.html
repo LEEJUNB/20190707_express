@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>선택자 문법 사용하기</title>
+        <style>
+            #p_tag + p {
+                color : red;
+            }
+            .table th {
+                color : red;
+            }
+            tbody > tr > td {
+                color : blue;
+            }
+            tbody > tr + tr > td {
+                color : yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>title</h1>
+            <div>
+                <p id="p_tag">id_paragraph</p>
+                <p>normal_paragraph</p>
+            </div>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>subtitle1</th>
+                            <th>subtitle2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>body1</td>
+                            <td>body2</td>
+                        </tr>
+                        <tr>
+                            <td>body3</td>
+                            <td>body4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
