@@ -1,12 +1,13 @@
 @charset "utf-8";
 
-html{
-    background-image : "../img/cat.jpeg";
+html {
+    /* background 이미지 설정 */
+    background-image: url("../img/cat.jpeg");
+    background-repeat: no-repeat;
     background-position: center;
-    background-attachment : fixed;
-    background-repeat : no-repeat;
-    background-size : 100% 100%l  
-    
+    background-attachment: fixed;
+     /* 이미지 크기 설정(꽉 차게) 너비, 높이 입력. 100%=> 사이즈변경시에도 비율유지 */
+    background-size: 100% 100%;   
 }
 
 div p {
