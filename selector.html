@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Select </title>
+    </head>
+
+    <style>
+        div#descendant p {
+            color: red;
+        }
+        div#child > p {
+            color : blue;
+        }
+    </style>
+
+    <body>
+
+        <!-- 자손선택 해당 id-->
+        <div id="descendant">
+            <p> 자손 문단 태그</p>
+            <div>
+                <p> 자손 문단 태그의 내부 태그 </p>
+            </div>
+        </div>
+        <!-- 자식선택 해당 id -->
+        <div id="child">
+            <p> 자식 문단 태그 </p>
+             <div>
+                 <p> 자식 문단 태그의 내부 태그</p>
+             </div>
+        </div>
+        
+    </body>
+</html>
