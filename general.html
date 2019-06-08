@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> selector </title>
+        <style>
+            div#general p#gen_p ~ p{
+                color : yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="general">
+            <p>첫문단</p>
+            <p>두번째문단</p>
+            <p id="gen_p"> id="gen_p"인 문단</p>
+            <p>네번째문단</p>
+            <p>마지막문단</p>
+        </div>
+    </body>
+</html>
