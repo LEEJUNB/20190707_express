@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+
 html {
     /* background 이미지 설정 */
     background-image: url("../img/cat.jpeg");
@@ -11,6 +13,11 @@ html {
 }
 
 div p {
+    padding : 10px;
+    border : 20px;
+    margin : 30px;
+    height : 10px;
+    width : 10px;
     color : red;
 }
 
