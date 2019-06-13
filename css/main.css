@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-
-
 html {
     /* background 이미지 설정 */
-    background-image: url("../img/cat.jpeg");
+    background-image: url("../img/k-087.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
