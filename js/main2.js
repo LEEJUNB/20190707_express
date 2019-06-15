@@ -74,7 +74,10 @@ console.log(cop.length); // 띄워쓰기도 길이에 포함된다.
 console.log(name.charAt(0)); // name객체의 0번째 인덱스인 "J"가 출력된다.
 
 //split(구분자)
-console.log(cop.split(" ")); // 공백을 기준으로 나눠 하나의 배열값이 된다. 출력하면 ["Ocean", "Holdings"] 가 출력
+console.log(cop.split(" ")); // 공백을 기준으로 나눠 하나의 배열값이 된다. 출력하면 ["Ocean", "Holdings"] 가 반환
 
 //indexOf(index)
-console.log(cop.indexOf(" "));
+console.log(cop.indexOf("H")); // 입력한 값의 index 위치를 알려줌. 값이 없을 경우 -1이 반환됨
+
+// lec.11 DOM Obejct
+
