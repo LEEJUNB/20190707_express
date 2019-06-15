@@ -57,4 +57,24 @@ var cat = {gender : 'female', age : 5};
 console.log(cat.gender, cat.age);
 
 var pi = Math.PI;
-console.log(pi);
+console.log(pi); // 3.1415926535
+console.log(Math.pow(2,4)); // 2^4 = 16
+console.log(Math.random()); // 0 <= x < 1 값을 랜덤하게 제공
+
+var date = new Date("1970-01-01"); // 날짜를 문자열로 작성하는 것을 DateString이라함
+console.log(date.getTime()); // method인 getTime사용
+
+var name = "JunB";
+var cop = "Ocean Holdings";
+
+console.log(name.length);
+console.log(cop.length); // 띄워쓰기도 길이에 포함된다.
+
+//charAt(index)
+console.log(name.charAt(0)); // name객체의 0번째 인덱스인 "J"가 출력된다.
+
+//split(구분자)
+console.log(cop.split(" ")); // 공백을 기준으로 나눠 하나의 배열값이 된다. 출력하면 ["Ocean", "Holdings"] 가 출력
+
+//indexOf(index)
+console.log(cop.indexOf(" "));
