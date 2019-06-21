@@ -5,3 +5,4 @@ document.getElementsByName("testText")[0].onkeydown = function(e){
     var eventCode = e.code;
     console.log(eventCode, typeof eventCode);
 };
+

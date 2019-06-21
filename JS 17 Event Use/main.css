@@ -1,0 +1,37 @@
+div#wrap{
+    border : 3px solid red;
+    padding : 100px;
+}
+
+img {
+    width : 300px;
+    height : 300px;
+}
+
+/*
+css 애니메이션 효과 넣기
+투명도는 0~1까지 설정가능
+margin-top : -15%로 하면 -15%만큼 margin위로 올라감
+*/
+@keyframes move {
+    from {
+        opacity : 0.5;
+    }
+    to {
+        opacity : 1;
+        margin-top : -15%;
+    }
+}
+
+/*
+div.over는 div의 클래스가 over인것을 의미. 
+이는 main.js를 통해 id가 wrap인 객체의 class를 over로 변경했음을 기억할 것
+
+현재는 css 애니메이션 효과 적용하기
+fill-mode : forwards;로 하면 애니메이션효과끝난상태 그대로 있음
+*/
+div.over > img{
+    animation-name: move;
+    animation-duration : 3s;
+    animation-fill-mode: forwards;
+}
