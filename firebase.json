@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/index.html" /* 배포할 정적 페이지 이름 */
       }
     ]
   }
